@@ -10,6 +10,7 @@ const Card = ({ props, isFav = false }) => {
   return (
     <div className="card" style={{ boxShadow: theme.cardShadow, backgroundColor: theme.cardBg }}>
       {/* En cada card deberan mostrar en name - username y el id */}
+      <img src="/images/doctor.jpg" alt="" className="doctorImg"/>
       <h3>{props.name}</h3>
       <h4>{props.username}</h4>
       <p>ID: {props.id}</p>
